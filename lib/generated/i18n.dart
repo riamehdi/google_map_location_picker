@@ -21,16 +21,17 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  String get access_to_location_denied => "Access to location denied";
-  String get allow_access_to_the_location_services => "Allow access to the location services.";
-  String get cant_get_current_location => "Can't get current location";
-  String get finding_place => "Finding place...";
-  String get no_result_found => "No result found";
-  String get ok => "Ok";
-  String get please_check_your_connection => "Please check your connection";
-  String get please_make_sure_you_enable_gps_and_try_again => "Please make sure you enable GPS and try again";
-  String get search_place => "Search place";
-  String get server_error => "Server error";
+  String get cant_get_current_location => "Impossible d'obtenir la localisation actuelle";
+  String get finding_place => "Recherche de votre adresse...";
+  String get no_result_found => "Aucun résultat trouvé";
+  String get access_to_location_denied => "Accès à la localisation refusé";
+  String get allow_access_to_the_location_services => "Permettre l'accès aux services de localisation.";
+  String get server_error => "Erreur de serveur";
+  String get search_place => "Taper votre adresse ici";
+  String get ok => "Valider";
+  String get please_check_your_connection => "Veuillez vérifier votre connexion";
+  String get please_make_sure_you_enable_gps_and_try_again => "Assurez-vous que vous avez activé le GPS et réessayez";
+
 }
 
 class $ar extends S {
@@ -145,32 +146,32 @@ class $tr extends S {
   String get please_make_sure_you_enable_gps_and_try_again => "Lütfen GPS’i etkinleştirin ve tekrar deneyin.";
 }
 
-class $fr extends S {
-  const $fr();
+class $en extends S {
+  const $en();
 
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
   @override
-  String get cant_get_current_location => "Impossible d'obtenir la localisation actuelle";
+  String get access_to_location_denied => "Access to location denied";
   @override
-  String get finding_place => "Recherche de votre adresse...";
+  String get allow_access_to_the_location_services => "Allow access to the location services.";
   @override
-  String get no_result_found => "Aucun résultat trouvé";
+  String get cant_get_current_location => "Can't get current location";
   @override
-  String get access_to_location_denied => "Accès à la localisation refusé";
+  String get finding_place => "Finding place...";
   @override
-  String get allow_access_to_the_location_services => "Permettre l'accès aux services de localisation.";
+  String get no_result_found => "No result found";
   @override
-  String get server_error => "Erreur de serveur";
+  String get ok => "Ok";
   @override
-  String get search_place => "Taper votre adresse ici";
+  String get please_check_your_connection => "Please check your connection";
   @override
-  String get ok => "Valider";
+  String get please_make_sure_you_enable_gps_and_try_again => "Please make sure you enable GPS and try again";
   @override
-  String get please_check_your_connection => "Veuillez vérifier votre connexion";
+  String get search_place => "Search place";
   @override
-  String get please_make_sure_you_enable_gps_and_try_again => "Assurez-vous que vous avez activé le GPS et réessayez";
+  String get server_error => "Server error";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
