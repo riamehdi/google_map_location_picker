@@ -35,6 +35,7 @@ class _MyAppState extends State<MyApp> {
         Locale('ar', ''),
         Locale('pt', ''),
         Locale('tr', ''),
+        Locale('fr', ''),
       ],
       home: Scaffold(
         appBar: AppBar(
