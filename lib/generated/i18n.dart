@@ -145,7 +145,7 @@ class $tr extends S {
   String get please_make_sure_you_enable_gps_and_try_again => "Lütfen GPS’i etkinleştirin ve tekrar deneyin.";
 }
 
-class $tr extends S {
+class $fr extends S {
   const $fr();
 
   @override
@@ -222,6 +222,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
           return SynchronousFuture<S>(S.current);
         case "tr":
           S.current = const $tr();
+          return SynchronousFuture<S>(S.current);
+        case "fr":
+          S.current = const $fr();
           return SynchronousFuture<S>(S.current);
         default:
           // NO-OP.
