@@ -1,0 +1,11 @@
+{  "please_check_your_connection": "Veuillez vérifier votre connexion",
+  "server_error": "Erreur de serveur",
+  "access_to_location_denied": "Accès à la localisation refusé",
+  "allow_access_to_the_location_services": "Permettre l'accès aux services de localisation.",
+  "ok": "Valider",
+  "cant_get_current_location": "Impossible d'obtenir la localisation actuelle",
+  "please_make_sure_you_enable_gps_and_try_again": "Assurez-vous que vous avez activé le GPS et réessayez",
+  "search_place": "Taper votre adresse ici",
+  "finding_place": "Recherche de votre adresse...",
+  "no_result_found": "Aucun résultat trouvé"
+}

@@ -34,6 +34,7 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: const <Locale>[
         Locale('en', ''),
         Locale('ar', ''),
+        Locale('fr', ''),
       ],
       home: Scaffold(
         appBar: AppBar(

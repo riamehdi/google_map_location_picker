@@ -30,6 +30,7 @@ MaterialApp(
   supportedLocales: const <Locale>[
     Locale('en', ''),
     Locale('ar', ''),
+    Locale('fr', ''),
   ],
   home: ...
 )
