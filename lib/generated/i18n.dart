@@ -145,6 +145,34 @@ class $tr extends S {
   String get please_make_sure_you_enable_gps_and_try_again => "Lütfen GPS’i etkinleştirin ve tekrar deneyin.";
 }
 
+class $tr extends S {
+  const $fr();
+
+  @override
+  TextDirection get textDirection => TextDirection.ltr;
+
+  @override
+  String get cant_get_current_location => "Impossible d'obtenir la localisation actuelle";
+  @override
+  String get finding_place => "Recherche de votre adresse...";
+  @override
+  String get no_result_found => "Aucun résultat trouvé";
+  @override
+  String get access_to_location_denied => "Accès à la localisation refusé";
+  @override
+  String get allow_access_to_the_location_services => "Permettre l'accès aux services de localisation.";
+  @override
+  String get server_error => "Erreur de serveur";
+  @override
+  String get search_place => "Taper votre adresse ici";
+  @override
+  String get ok => "Valider";
+  @override
+  String get please_check_your_connection => "Veuillez vérifier votre connexion";
+  @override
+  String get please_make_sure_you_enable_gps_and_try_again => "Assurez-vous que vous avez activé le GPS et réessayez";
+}
+
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   const GeneratedLocalizationsDelegate();
 
@@ -155,6 +183,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
       Locale("pt", ""),
       Locale("en", ""),
       Locale("tr", ""),
+      Locale("fr", ""),
     ];
   }
 
