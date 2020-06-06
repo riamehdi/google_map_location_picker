@@ -308,10 +308,10 @@ class MapPickerState extends State<MapPicker> {
         builder: (context) {
           return AlertDialog(
             title: Text(S.of(context)?.access_to_location_denied ??
-                'Access to location denied'),
+                "Accès à la localisation refusé"),
             content: Text(
                 S.of(context)?.allow_access_to_the_location_services ??
-                    'Allow access to the location services.'),
+                    "Permettre l'accès aux services de localisation."),
             actions: <Widget>[
               FlatButton(
                 child: Text(S.of(context)?.ok ?? 'Ok'),
@@ -345,11 +345,11 @@ class MapPickerState extends State<MapPicker> {
           builder: (BuildContext context) {
             return AlertDialog(
               title: Text(S.of(context)?.cant_get_current_location ??
-                  "Can't get current location"),
+                  "Impossible d'obtenir la localisation actuelle"),
               content: Text(S
                       .of(context)
                       ?.please_make_sure_you_enable_gps_and_try_again ??
-                  'Please make sure you enable GPS and try again'),
+                  "Assurez-vous que vous avez activé le GPS et réessayez"),
               actions: <Widget>[
                 FlatButton(
                   child: Text('Ok'),
