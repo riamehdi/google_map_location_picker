@@ -114,8 +114,8 @@ class $pt extends S {
   String get please_make_sure_you_enable_gps_and_try_again => "Certifique-se de ativar o GPS e tente novamente";
 }
 
-class $en extends S {
-  const $en();
+class $fr extends S {
+  const $fr();
 }
 
 class $tr extends S {
