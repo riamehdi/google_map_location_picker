@@ -118,6 +118,34 @@ class $fr extends S {
   const $fr();
 }
 
+class $es extends S {
+  const $es();
+
+  @override
+  TextDirection get textDirection => TextDirection.ltr;
+
+  @override
+  String get cant_get_current_location => "No se puede obtener la ubicación actual";
+  @override
+  String get finding_place => "Buscando lugar ...";
+  @override
+  String get no_result_found => "No se encontraron resultados";
+  @override
+  String get access_to_location_denied => "Acceso a la ubicación denegado";
+  @override
+  String get allow_access_to_the_location_services => "Permitir acceso a los servicios de ubicación";
+  @override
+  String get server_error => "Error del servidor";
+  @override
+  String get search_place => "Buscar lugar";
+  @override
+  String get ok => "Ok";
+  @override
+  String get please_check_your_connection => "Por favor, verifique su conexión";
+  @override
+  String get please_make_sure_you_enable_gps_and_try_again => "Asegúrese de habilitar el GPS y vuelva a intentarlo";
+}
+
 class $tr extends S {
   const $tr();
 
@@ -184,6 +212,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
       Locale("pt", ""),
       Locale("en", ""),
       Locale("tr", ""),
+      Locale("es", ""),
       Locale("fr", ""),
     ];
   }
@@ -220,6 +249,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
           return SynchronousFuture<S>(S.current);
         case "en":
           S.current = const $en();
+          return SynchronousFuture<S>(S.current);
+        case "es":
+          S.current = const $es();
           return SynchronousFuture<S>(S.current);
         case "tr":
           S.current = const $tr();
