@@ -328,7 +328,7 @@ class MapPickerState extends State<MapPicker> {
       );
     } else if (geolocationStatus == LocationPermission.disabled) {
       // FIXME: handle this case
-    } else if (permission == LocationPermission.whileInUse || permission == LocationPermission.always) {
+    } else if (geolocationStatus == LocationPermission.whileInUse || geolocationStatus == LocationPermission.always) {
       d('LocationPermission.granted');
       if (dialogOpen != null) {
         Navigator.of(context, rootNavigator: true).pop();
