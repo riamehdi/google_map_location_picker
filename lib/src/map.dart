@@ -86,8 +86,7 @@ class MapPickerState extends State<MapPicker> {
   Future<void> _initCurrentLocation() async {
     Position currentPosition;
     try {
-      currentPosition = await Geolocator()
-          .getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
+      currentPosition = await getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
 
       d("position = $currentPosition");
 
@@ -300,7 +299,7 @@ class MapPickerState extends State<MapPicker> {
 
   Future _checkGeolocationPermission() async {
     var geolocationStatus =
-        await Geolocator().checkGeolocationPermissionStatus();
+        await checkGeolocationPermissionStatus();
 
     if (geolocationStatus == GeolocationStatus.denied && dialogOpen == null) {
       d('showDialog');
@@ -339,7 +338,7 @@ class MapPickerState extends State<MapPicker> {
   }
 
   Future _checkGps() async {
-    if (!(await Geolocator().isLocationServiceEnabled())) {
+    if (!(await isLocationServiceEnabled())) {
       if (Theme.of(context).platform == TargetPlatform.android) {
         showDialog(
           context: context,
