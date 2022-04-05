@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_map_location_picker/generated/l10n.dart'
     as location_picker;
 import 'package:google_map_location_picker/google_map_location_picker.dart';
+import 'package:google_map_location_picker_example/api_key.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'generated/i18n.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  LocationResult _pickedLocation;
+  LocationResult? _pickedLocation;
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +50,9 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 RaisedButton(
                   onPressed: () async {
-                    LocationResult result = await showLocationPicker(
+                    LocationResult? result = await showLocationPicker(
                       context,
-                      "",
+                      googleMapsApiKeyAndroid,
                       initialCenter: LatLng(31.1975844, 29.9598339),
 //                      automaticallyAnimateToCurrentLocation: true,
 //                      mapStylePath: 'assets/mapStyle.json',
