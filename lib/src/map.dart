@@ -93,10 +93,13 @@ class MapPickerState extends State<MapPicker> {
 
   // this also checks for location permission.
   Future<void> _initCurrentLocation() async {
+    final GeolocatorPlatform _geolocatorPlatform = GeolocatorPlatform.instance;
+
     Position? currentPosition;
     try {
+      var s = LocationSettings(accuracy: LocationAccuracy.high);
       currentPosition =
-          await getCurrentPosition(desiredAccuracy: widget.desiredAccuracy);
+          await _geolocatorPlatform.getCurrentPosition(locationSettings: s);
       d("position = $currentPosition");
 
       setState(() => _currentPosition = currentPosition);
